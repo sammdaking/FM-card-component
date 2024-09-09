@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: white;
+  line-height: 1;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 10%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+h1 {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-family: "Big Shoulders Display";
+}
+p {
+  color: hsla(0, 44%, 96%, 0.75);
+  font-family: "Lexend Deca";
+}
+
+.item-sedan {
+  background-color: hsl(31, 77%, 52%);
+  font-size: 15px;
+  height: 320px;
+  padding: 35px;
+}
+
+.item-suvs {
+  background-color: hsl(184, 100%, 22%);
+  padding: 35px;
+  font-size: 15px;
+  height: 320px;
+}
+
+.item-luxury {
+  background-color: hsl(179, 100%, 13%);
+  font-size: 15px;
+  height: 320px;
+  padding: 35px;
+}
+
+#sedan-button,
+#suv-button,
+#luxury-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background-color: white;
+  padding: 5px 10px;
+  color: hsl(184, 100%, 22%);
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: 80px;
+  height: 2.5em;
+}
+#suv-button:hover,
+#luxury-button:hover,
+#sedan-button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+  border: 2px solid white;
+  font-weight: 900;
+}
+#luxury-button:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+#suv-button:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+.bottom {
+  color: black;
+}
+@media only screen and (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container {
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 760px;
+  }
+  .attribution {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin-left: 20px;
+    text-align: center;
+    size: 200px;
+    background-color: white;
+    color: black;
+    line-height: 20px;
+  }
+  a {
+    color: hsl(31, 77%, 52%);
+    text-decoration: none;
+  }
+  a:hover {
+    color: blue;
+  }
+}
